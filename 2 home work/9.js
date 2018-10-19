@@ -12,10 +12,6 @@ document.write ('</style>\n');
 document.write ('<body>\n');
  
 document.write ('<p>');
-    for(i = 1; i <= size ; i++)
-    {
-        arr[i] = 0;
-    }
  
     arr[0] = 1;
     for(j = 1; j <= size; j++)

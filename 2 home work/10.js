@@ -10,6 +10,6 @@ a[i]=prompt("Enter a"+(i+1));
 a[i]=Number(a[i]);
 }
 for(i=0;i<n;i++){
-	sum=sum+a[i]*(x**(n-i));
+	sum=sum+a[i]*(x**(i));
 }
 console.log(sum);
