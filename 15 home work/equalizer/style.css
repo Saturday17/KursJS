@@ -1,0 +1,17 @@
+#equalizer{
+	display: flex;
+	flex-direction: row;
+	height: calc(14px * 30);
+	transform: rotate(180deg);
+	margin-right: 300px;
+}
+	.equalizer_col{
+		width: 14px;
+	}
+		.equalizer_col b{
+			display: block;
+			width: 12px;
+			height: 12px;
+			margin-bottom: 2px;
+			background-color: var(--color);
+		}
