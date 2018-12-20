@@ -9,12 +9,12 @@
 
 	<div class="main">
 		<form name="form">
-			<input class="text">
+			<input class="textview" name="textview">
 		</form>
 		<table>
 			<tr>
-				<td><input class="button" type="button" value="C"></td>
-				<td><input class="button" type="button" value="<"></td>
+				<td><input class="button" type="button" value="C" onclick="clean()"></td>
+				<td><input class="button" type="button" value="<" onclick="back()"></td>
 				<td><input class="button" type="button" value="/" onclick="insert('/')"></td>
 				<td><input class="button" type="button" value="*" onclick="insert('*')"></td>
 			</tr>
@@ -34,7 +34,11 @@
 				<td><input class="button" type="button" value="1" onclick="insert('1')"></td>
 				<td><input class="button" type="button" value="2" onclick="insert('2')"></td>
 				<td><input class="button" type="button" value="3" onclick="insert('3')"></td>
-				<td><input class="button" type="button" value="=" onclick="insert('=')"></td>
+				<td rowspan="5"><input style="height: 106px;" class="button" type="button" value="=" onclick="equal()"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input style="width: 106px;" class="button" type="button" value="0" onclick="insert('0')"></td>
+				<td><input class="button" type="button" value="." onclick="insert('.')"></td>
 			</tr>
 		</table>
 	</div>

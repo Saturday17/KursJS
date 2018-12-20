@@ -1,7 +1,9 @@
 *{
-	margin: 0px;
 	padding: 0px;
 	margin-left: 10%;
+}
+.main{
+	margin-top: 10%;
 }
 .button{
 	width: 50px;
@@ -10,7 +12,7 @@
 	margin: 2px;
 	cursor: pointer;
 }
-.text{
+.textview{
 	width: 203px;
 	margin: 5px;
 	font-size: 25px;
