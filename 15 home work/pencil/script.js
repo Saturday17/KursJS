@@ -36,40 +36,12 @@ size.addEventListener('change', function(){
 		}
 	}
 });
+
 color.addEventListener('change', function(){
-	switch(color.value){
-		case 'Красный':{
-			ctx.fillStyle = 'red';
-			ctx.strokeStyle = 'red';
-			break;
-		}
-		case 'Синий':{
-			ctx.fillStyle = 'blue';
-			ctx.strokeStyle = 'blue';
-			break;
-		}
-		case 'Зелёный':{
-			ctx.fillStyle = 'green';
-			ctx.strokeStyle = 'green';
-			break;
-		}
-		case 'Жёлтый':{
-			ctx.fillStyle = 'yellow';
-			ctx.strokeStyle = 'yellow';
-			break;
-		}
-		case 'Оранжевый':{
-			ctx.fillStyle = 'orange';
-			ctx.strokeStyle = 'orange';
-			break;
-		}
-		case 'Фиолетовый':{
-			ctx.fillStyle = 'purple';
-			ctx.strokeStyle = 'purple';
-			break;
-		}
-	}
+	ctx.fillStyle = this.value;
+	ctx.strokeStyle = this.value;
 });
+
 
 canv.addEventListener('mousemove', function(e){
 	if (isMouseDown){
